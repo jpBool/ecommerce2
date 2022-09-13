@@ -364,7 +364,7 @@ ul{
 .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #245ea0;
     text-decoration: none;
     display: block;
     transition: all 0.3 ease;
@@ -372,7 +372,7 @@ ul{
 .footer_email{
     font-size: 16px;
     text-transform: capitalize;
-    color: #228f9e;
+    color: #245ea0;;
     text-decoration: none;
     display: block;
     transition: all 0.3 ease;
