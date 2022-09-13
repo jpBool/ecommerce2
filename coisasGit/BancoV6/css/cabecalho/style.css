@@ -142,7 +142,7 @@ border-radius: 10.6634px;
 .pesquisa_icone{
     
     position: absolute;
-    width: 50px;
+    width: 20px;
     height: 35px;
     padding-left: 10px;
     padding-top: 10px;
@@ -227,6 +227,7 @@ body
     padding-right: 20px;
     margin-left: 4px;
     text-align: justify;
+    position: relative;
 
 }
 .desc_txt1{
@@ -309,7 +310,6 @@ body
 .prod_video {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin-top: 10%;
     margin-left:10%;
     margin-right: 10%;
@@ -335,8 +335,10 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
-    width: 25%;
+    
+    width: 20%;
     padding: 0 15px;
+   
 }
 .footer-col h4{
     font-size: 18px;
@@ -359,10 +361,10 @@ ul{
 .footer-col ul li :not(:last-child){
     margin-bottom: 10px;
 } 
-.footer-col ul li a {
+.footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
-    color: #228f9e;
+    color: #FFFFFF;
     text-decoration: none;
     display: block;
     transition: all 0.3 ease;
@@ -419,7 +421,8 @@ ul{
 
 .footer_imgc{
 
-    width: 20%;
+    width: 18%;
+    padding-right:10px
 }
 
 
