@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../BancoV4/css/cabecalho/style.css">
+    <link rel="stylesheet" href="../BancoV6/css/cabecalho/style.css">
     <script src="https://kit.fontawesome.com/0dcacea947.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
@@ -16,14 +16,14 @@
                 <span></span>
             </label>
             <ul class='menu_box'>
-                <li><a class='menu_item' href='../BancoV4/index.php'>Home</a></a></li>
-                <li><a class='menu_item' href='../BancoV4/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
-                <li><a class='menu_item' href='../BancoV4/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
+                <li><a class='menu_item' href='../BancoV6/index.php'>Home</a></a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
                 <li><a class='menu_item' href='#'>Devs</a></a></li>
                 <li><a class='menu_item' href='#'>Estatísticas</a></a></li>
             </ul>
         <div class='logo'>
-                <img class='logoimg' src="../BancoV4/imagem/logopreta.png">
+                <img class='logoimg' src="../BancoV6/imagem/logopreta.png">
         </div>
         <div class='pesquisa'>
         <i class="fa-thin fa-magnifying-glass fa"></i>
