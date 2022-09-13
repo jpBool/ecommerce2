@@ -20,25 +20,21 @@
             <ul class='menu_box'>
                 <li><a class='menu_item' href='../BancoV6/index.php'>Home</a></a></li>
                 <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
-<<<<<<< HEAD
-=======
                 <li><a class='menu_item' href='../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
                 <li><a class='menu_item' href='#'>Devs</a></a></li>
->>>>>>> 5b774e36b1c5a1545891f9a93a6a90d9672144fe
                 <li><a class='menu_item' href='#'>Estatísticas</a></a></li>
                 <li><a class='menu_item' href='#'>Devs</a></a></li>
             </ul>
-<<<<<<< HEAD
+
             <div class='logo'>
                 <img class='logoimg' src="../BancoV6/imagem/logopreta.png">
-=======
         <div class='logo'>
                 <img class='logoimg' src="../BancoV6/imagem/logopreta.png">
         </div>
         <div class='pesquisa'>
             <div class='pesquisa_icone'>
              <i class="fa-thin fa-magnifying-glass fa"></i>
->>>>>>> 5b774e36b1c5a1545891f9a93a6a90d9672144fe
+
             </div>
             <div class='pesquisa'>
                 <div class='pesquisa_icone'>
