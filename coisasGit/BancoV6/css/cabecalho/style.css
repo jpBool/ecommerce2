@@ -367,7 +367,7 @@ ul{
     display: block;
     transition: all 0.3 ease;
 }
-.footer_email ul li a {
+.footer_email{
     font-size: 16px;
     text-transform: capitalize;
     color: #228f9e;
@@ -375,7 +375,7 @@ ul{
     display: block;
     transition: all 0.3 ease;
 }  
-.footer_email ul li a:hover{
+.footer_email:hover{
     color:#FFFFFF;
     padding-left:8px;
  } 
@@ -388,7 +388,7 @@ ul{
     height: 40px;
     width: 40px;
     background-color: #afa2d3;
-    margin: 0 10px 10px 0;
+    margin: 10px 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -419,7 +419,7 @@ ul{
 
 .footer_imgc{
 
-    padding-right: 100px;
+    width: 20%;
 }
 
 
