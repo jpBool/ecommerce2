@@ -128,10 +128,10 @@
                         </div>
                         <div class="footer-col">
                             <h4>Contate-nos</h4>
-                            <address>
-                                <a href="#">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a><br>
-                                <a class="footer_email" href="mailto:picrollbauru@gmail.com">Nos mande um email</a>
-                            </address>
+                            <ul>
+                                <li><a href="https://goo.gl/maps/NAnKGTvv8a1h7rFS9">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a></li><br><br>
+
+                                <li><a class="footer_email" href="mailto:picrollbauru@gmail.com">Nos mande um email</a></li>
                             <div class="social">
                                 <a href="https://instagram.com/picrollbauru?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa"></i></a>
                             </div>
