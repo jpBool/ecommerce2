@@ -20,26 +20,27 @@
             <ul class='menu_box'>
                 <li><a class='menu_item' href='../BancoV6/index.php'>Home</a></li>
                 <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-                <li><a class='menu_item' href='#'>Devs</a></a></li>
-                <li><a class='menu_item' href='#'>Estatísticas</a></a></li>
+                <li><a class='menu_item' href='#'>Devs</a></li>
+                <li><a class='menu_item' href='#'>Estatísticas</a></li>
+                <li><a class='menu_item' href='#'>Patrocinadores</a></li>
             </ul>
             <div class='logo'>
                 <img class='logoimg' src="../BancoV6/imagem/logopreta.png">
             </div>
             <div class='pesquisa'>
                 <div class='pesquisa_icone'>
-                    <i class="fa-thin fa-magnifying-glass fa"></i>
+                    <a href="#"><i class="fa-thin fa-magnifying-glass fa"></i></a>
                 </div>
                 <input class="pesquisatxt" type="text" name="pesquisa" placeholder="Pesquisar...">
             </div>
             <div class='login'>
                 <div class='login_icone'>
-                    <a href="./login.html"><i class="fa-thin fa-user fa"></i></i></a>
+                    <a href="./login.html"><i class="fa-thin fa-user fa"></i></a>
                 </div>
             </div>
             <div class='carrinho'>
                 <div class='carrinho_icone'>
-                    <i class="fa-thin fa-cart-shopping fa"></i>
+                   <a href="#"> <i class="fa-thin fa-cart-shopping fa"></i></a>
                 </div>
             </div>
         </div>
@@ -111,6 +112,7 @@
                                 <li><a href="../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php">Produtos</a></li>
                                 <li><a href="#">Estatísticas</a></li>
                                 <li><a href="#">Devs</a></li>
+                                <li><a href="#">Patrocinadores</a></li>
                             </ul>
                         </div>
                         <div class="footer_imgc">
@@ -128,13 +130,14 @@
                         </div>
                         <div class="footer-col">
                             <h4>Contate-nos</h4>
+                            <div class="social">
+                                    <a href="https://instagram.com/picrollbauru?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa"></i></a>
+                                </div>
                             <ul>
                                 <li><a href="https://goo.gl/maps/NAnKGTvv8a1h7rFS9">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a></li>
 
                                 <li><a class="footer_email" href="mailto:picrollbauru@gmail.com">Nos mande um email</a></li>
-                                <div class="social">
-                                    <a href="https://instagram.com/picrollbauru?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa"></i></a>
-                                </div>
+                                
                         </div>
                     </div>
                 </div>
