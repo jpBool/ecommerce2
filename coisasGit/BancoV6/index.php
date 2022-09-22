@@ -20,12 +20,12 @@
             <ul class='menu_box'>
                 <li><a class='menu_item' href='../BancoV6/index.php'>Home</a></li>
                 <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-                 <li><a class='menu_item' href='#'>Devs</a></a></li>
+                <li><a class='menu_item' href='#'>Devs</a></a></li>
                 <li><a class='menu_item' href='#'>Estatísticas</a></a></li>
             </ul>
-        <div class='logo'>
+            <div class='logo'>
                 <img class='logoimg' src="../BancoV6/imagem/logopreta.png">
-        </div>
+            </div>
             <div class='pesquisa'>
                 <div class='pesquisa_icone'>
                     <i class="fa-thin fa-magnifying-glass fa"></i>
@@ -100,7 +100,7 @@
 
 
 
-<br><br><br><br>
+            <br><br><br><br>
             <footer class="footer">
                 <div class="container">
                     <div class="row">
@@ -114,7 +114,7 @@
                             </ul>
                         </div>
                         <div class="footer_imgc">
-                                <img class="footer_img" src="../BancoV6/imagem/logoembranco.png" alt="Nossa Marca">
+                            <img class="footer_img" src="../BancoV6/imagem/logoembranco.png" alt="Nossa Marca">
                         </div>
                         <div class="footer-col">
                             <h4>Desenvolvedores</h4>
@@ -129,12 +129,12 @@
                         <div class="footer-col">
                             <h4>Contate-nos</h4>
                             <ul>
-                                <li><a href="https://goo.gl/maps/NAnKGTvv8a1h7rFS9">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a></li><br><br>
+                                <li><a href="https://goo.gl/maps/NAnKGTvv8a1h7rFS9">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a></li>
 
                                 <li><a class="footer_email" href="mailto:picrollbauru@gmail.com">Nos mande um email</a></li>
-                            <div class="social">
-                                <a href="https://instagram.com/picrollbauru?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa"></i></a>
-                            </div>
+                                <div class="social">
+                                    <a href="https://instagram.com/picrollbauru?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa"></i></a>
+                                </div>
                         </div>
                     </div>
                 </div>
