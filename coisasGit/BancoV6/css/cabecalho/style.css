@@ -264,8 +264,9 @@ ul{
     width: 236px;
     height: 21px;
     margin-left: 150px;
-    position: absolute;
+    /* position: absolute; */
     padding: 10px;
+    backface-visibility: hidden;
 }
 
 .desc_btn a{
