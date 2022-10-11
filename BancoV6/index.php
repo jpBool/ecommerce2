@@ -36,7 +36,7 @@
             </div>
             <div class='login'>
                 <div class='login_icone'>
-                    <a href="./login.html"><i class="fa-thin fa-user fa"></i></a>
+                    <a href="./login.php"><i class="fa-thin fa-user fa"></i></a>
                 </div>
             </div>
             <div class='carrinho'>
@@ -112,7 +112,7 @@
             <br>
             <footer class="footer">
                 <div class="container">
-                    <div class="row">
+                    <div class="rowf">
                         <div class="footer_imgc">
                             <img class="footer_img" src="../BancoV6/imagem/logoembranco.png" alt="Nossa Marca">
                         </div>
@@ -122,7 +122,7 @@
                                 <li><a href="../BancoV6/index.php">Home</a></li>
                                 <li><a href="../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php">Produtos</a></li>
                                 <li><a href="#">Estatísticas</a></li>
-                                <li><a href="#">Devs</a></li>
+                                <li><a href="../BancoV6/Cadastros/Devs/devs.php">Devs</a></li>
                                 <li><a href="#">Patrocinadores</a></li>
                             </ul>
                         </div>
@@ -130,20 +130,20 @@
                         <div class="footer-col">
                             <h4>Desenvolvedores</h4>
                             <ul>
-                                <li><a href="#">07 - Bruno Osajima Suwa</a></li>
-                                <li><a href="#">14 - Enrico Grossi de Carvalho</a></li>
-                                <li><a href="#">21 - João Pedro de Oliveira Dos Santos</a></li>
-                                <li><a href="#">33 - Renan Hayashi Moreira</a></li>
-                                <li><a href="#">34 - Vitória Vieira da Silva</a></li>
+                                <li><a href="../BancoV6/Cadastros/Devs/devs.php">07 - Bruno Osajima Suwa</a></li>
+                                <li><a href="../BancoV6/Cadastros/Devs/devs.php">14 - Enrico Grossi de Carvalho</a></li>
+                                <li><a href="../BancoV6/Cadastros/Devs/devs.php">21 - João Pedro de Oliveira Dos Santos</a></li>
+                                <li><a href="../BancoV6/Cadastros/Devs/devs.php">33 - Renan Hayashi Moreira</a></li>
+                                <li><a href="../BancoV6/Cadastros/Devs/devs.php">34 - Vitória Vieira da Silva</a></li>
                             </ul>
                         </div>
                         <div class="footer-col">
                             <h4>Contate-nos</h4>
                             <div class="social">
-                                <a href="https://instagram.com/picrollbauru?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa"></i></a>
+                                <a href="https://instagram.com/picrollbauru?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa"></i></a>
                             </div>
                             <ul>
-                                <li><a href="https://goo.gl/maps/NAnKGTvv8a1h7rFS9">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a></li>
+                                <li><a href="https://goo.gl/maps/NAnKGTvv8a1h7rFS9" target="_blank">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a></li>
                                 <br>
                                 <li><a class="footer_email" href="mailto:picrollbauru@gmail.com">Nos mande um email</a></li>
 

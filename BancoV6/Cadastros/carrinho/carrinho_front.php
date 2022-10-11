@@ -36,7 +36,7 @@
 			</div>
 			<div class='login'>
 				<div class='login_icone'>
-					<a href="../../../login.html" i class="fa-thin fa-user fa"></i></a>
+					<a href="../../../BancoV6/login.php" i class="fa-thin fa-user fa"></i></a>
 				</div>
 			</div>
 			<div class='carrinho'>
@@ -70,9 +70,6 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 	include "carrinho_back.php";
 	// $sql ="select * from pic_usuario where "
 	// $contagem = "select count(*) from pic_carrinho where cod_usuario= "
-	// if($contagem1[0]==0){
-
-	// }
 	?>
 	<div class="maec">
 		<div class="tabela">
@@ -124,7 +121,7 @@ Adaptado por Prof. Victor rodrigues (ago/2022)
 							<div class='cellc cellPrecoq'>
 								<div class="boxc">
 									<label>qtd:</label>
-									<input type="text" size="1" name="prod[<?php echo $idprod; ?>]" value="<?php echo $linha['qtde']; ?>" />
+									<input type="number" min="1" max="100" id="qtdc" name="prod[<?php echo $idprod; ?>]" value="<?php echo $linha['qtde']; ?>" />
 								</div>
 							</div>
 							|
