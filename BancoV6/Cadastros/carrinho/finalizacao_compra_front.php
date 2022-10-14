@@ -7,7 +7,7 @@
     <title>Compra com sucesso</title>
     <link rel="stylesheet" href="../../../BancoV6/css/cabecalho/style.css">
 	<script src="https://kit.fontawesome.com/0dcacea947.js" crossorigin="anonymous"></script>
-	<link rel="icon" href="../../../BancoV6/imagem/logopreta.png" /
+	<link rel="icon" href="../../../BancoV6/imagem/logopreta.png">
 </head>
 <body>
     
