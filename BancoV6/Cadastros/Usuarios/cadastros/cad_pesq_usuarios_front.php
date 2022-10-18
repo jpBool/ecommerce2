@@ -3,44 +3,132 @@
     <head>
         <meta charset="utf-8" />
         <title>Pesquisa de Usuários</title>
-        <link rel="stylesheet" href="../../../../BancoV6/css\cabecalho/style.css">
-        <script src="https://kit.fontawesome.com/0dcacea947.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="../../../../BancoV6/imagem/logopreta.png" />
+        <link rel="stylesheet" href="../../../../BancoV6/css/cabecalho/style.css">
     </head>
 <body>
+
+<style>
+    .menuTop
+    {
+        overflow: hidden;
+        background-color: #333;
+    }
+    .menuTop li
+    {
+        display:inline-flex;
+        padding-right:3px;
+        background-color: rgb(94, 94, 94);
+       
+    }
+    .menuTop a
+    {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    body
+    {
+        background-color: #f0ffff;
+    }
+    .table {width:1500px; display:grid;}
+    .row { display:block;}
+    .cell {
+        border-width: medium;
+        border-style: solid;
+        display:inline-block;
+        padding: 1px 3px;
+        margin-bottom: .2%;
+        background-color: rgb(144, 221, 217);
+        font-size: 10pt;
+    }
+
+    .mae{
+        width: 100%;
+        padding-left: 250px;
+        background-color: #f0ffff;
+    }
+
+    .cellNome {
+        width:100px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        height: 15px;
+        font-size: 15px;
+        background-color: #597FB1;
+        font-weight: bolder;
+    }
+    .cellHeader {text-align: center !important;}
+    .cellCodigo {
+        width:100px; 
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        height: 15px;
+        font-size: 15px;
+        background-color: #597FB1;
+        font-weight: bolder;
+    }
+    .cellEmail {
+        width:220px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        height: 15px;
+        font-size: 15px;
+        background-color: #597FB1;
+        font-weight: bolder;
+    }
+    .cellSenha {
+        width:60px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        height: 15px;
+        font-size: 15px;
+        background-color: #597FB1;
+        font-weight: bolder;
+    }
+    .cellTelefone {
+        width:100px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        height: 15px;
+        font-size: 15px;
+        background-color: #597FB1;
+        font-weight: bolder;
+    }
+    .cellAcoes {
+        width:100px;
+        border-radius: 8px;
+        text-align: center;   
+        padding: 10px;
+        height: 15px;
+        font-size: 15px;
+        background-color: #597FB1;
+        font-weight: bolder;
+    }
+</style>
+
 <div class='cabecalho'>
-            <input id='menu_to' type='checkbox' />
-            <label class='menu_btn' for='menu_to'>
-                <span></span>
-            </label>
-            <ul class='menu_box'>
-                <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
-                <li><a class='menu_item' href='#'>Estatísticas</a></li>
-                <li><a class='menu_item' href='#'>Patrocinadores</a></li>
-            </ul>
-            <div class='logo'>
-                <img class='logoimg' src="../../../../BancoV6/imagem/logopreta.png">
-            </div>
-            <a href="../../../../BancoV6/">
-            <div class='pesquisa'>
-                <div class='pesquisa_icone'>
-                    <a href="#"><i class="fa-thin fa-magnifying-glass fa"></i></a>
-                </div>
-                <input class="pesquisatxt" type="text" name="pesquisa" placeholder="Pesquisar...">
-            </div>
-            <div class='login'>
-                <div class='login_icone'>
-                    <a href="../../../login.php"><i class="fa-thin fa-user fa"></i></a>
-                </div>
-            </div>
-            <div class='carrinho'>
-                <div class='carrinho_icone'>
-                    <a href="#"> <i class="fa-thin fa-cart-shopping fa"></i></a>
-                </div>
-            </div>
-        </div>
+    <div class='hamburguer_menu'>
+        <input id='menu_to' type='checkbox'/>
+        <label class ='menu_btn' for='menu_to'>
+            <span></span>
+        </label>
+        <ul class='menu_box'>
+            <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></a></li>
+            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
+            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
+            <li><a class='menu_item' href='#'>Devs</a></a></li>
+            <li><a class='menu_item' href='#'>Estatísticas</a></a></li> 
+       </ul>
+    </div>
+</div>
 <div class="menuTop">
         <ul>
             <li>
@@ -55,7 +143,7 @@
         </ul>  
     </div><br>
     
-
+    <div class='mae'>
 <?php
     include "cad_pesq_usuarios_back.php";
 
@@ -68,7 +156,7 @@
     echo "
     <div class='table'>
         <div class='row'>
-            <div class='cell cellodigo cellHeader'>
+            <div class='cell cellCodigo cellHeader'>
                 Cód. Usuário
             </div>
             <div class='cell cellNome cellHeader'>
@@ -93,7 +181,7 @@
         {
             echo "
             <div class='row'>
-                <div class='cell cellodigo'>
+                <div class='cell cellCodigo'>
                     ".$linha['id_usuario']."
                 </div>
                 <div class='cell cellNome'>
@@ -117,5 +205,6 @@
     // Fechando a tag da tabela
     echo "</div>";
 ?>    
+    </div>
 </body>
 </html>
