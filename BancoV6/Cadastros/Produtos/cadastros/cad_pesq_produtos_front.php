@@ -44,7 +44,7 @@
 <a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
 <a href="../../../index.php">+ Voltar</a>
 
-
+<div class='maeus'>
 <?php
     include "cad_pesq_produtos_back.php";
 
@@ -55,43 +55,43 @@
 
     // Começar tabela e criar o cabeçalho
     echo "
-    <div class='maeus'>
-    <div class='table'>
-        <div class='row'>
-            <div class='cell cellodigo cellHeader'>
+    <h1 class='hu'>Cadastro de Produtos</h1>
+    <div class='tableus'>
+        <div class='rowu'>
+            <div class='cellu cellodigo cellHeader'>
                 Cód. Produto
             </div>
-            <div class='cell cellNome cellHeader'>
+            <div class='cellu cellNome cellHeader'>
                 Nome
             </div>
-            <div class='cell cellDescricao cellHeader'>
+            <div class='cellu cellDescricao cellHeader'>
                 Descrição
             </div>
-            <div class='cell cellQtd cellHeader'>
+            <div class='cellu cellQtd cellHeader'>
                 Quantidade
             </div>
-            <div class='cell cellPreco cellHeader'>
+            <div class='cellu cellPreco cellHeader'>
                 Preço
             </div>
-            <div class='cell cellExcluido cellHeader'>
+            <div class='cellu cellExcluido cellHeader'>
                 Excluido
             </div>
-            <div class='cell cellData cellHeader'>
+            <div class='cellu cellData cellHeader'>
                 Data/Hora
             </div>
-            <div class='cell cellodigoVisual cellHeader'>
+            <div class='cellu cellodigoVisual cellHeader'>
                 CodigoVisual
             </div>
-            <div class='cell cellLucro cellHeader'>
+            <div class='cellu cellLucro cellHeader'>
                 Lucro
             </div>
-            <div class='cell cellIcms cellHeader'>
+            <div class='cellu cellIcms cellHeader'>
                 Icms
             </div>
-            <div class='cell cellImagem cellHeader'>
+            <div class='cellu cellImagem cellHeader'>
                 Imagem
             </div>
-            <div class='cell cellAcoes'>
+            <div class='cellu cellAcoes'>
                 &nbsp;
             </div>     
         </div>";
@@ -100,41 +100,41 @@
         foreach ($resultado_lista as $linha)
         {
             echo "
-            <div class='row'>
-                <div class='cell cellodigo'>
+            <div class='rowu'>
+                <div class='cellu cellodigo'>
                     ".$linha['id_produto']."
                 </div>
-                <div class='cell cellNome'>
+                <div class='cellu cellNome'>
                     ".$linha['nome']."
                 </div>
-                <div class='cell cellDescricao'>
+                <div class='cellu cellDescricao'>
                     ".$linha['descricao']."
                 </div>
-                <div class='cell cellQtd'>
+                <div class='cellu cellQtd'>
                     ".$linha['qtd']."
                 </div>
-                <div class='cell cellPreco'>
+                <div class='cellu cellPreco'>
                     ".$linha['preco']."
                 </div>
-                <div class='cell cellExcluido'>
+                <div class='cellu cellExcluido'>
                     ".$linha['excluido']."
                 </div>
-                <div class='cell cellData'>
+                <div class='cellu cellData'>
                     ".$linha['datahora_exlusao']."
                 </div>
-                <div class='cell cellodigoVisual'>
+                <div class='cellu cellodigoVisual'>
                     ".$linha['codigovisual']."
                 </div>
-                <div class='cell cellLucro'>
+                <div class='cellu cellLucro'>
                     ".$linha['margem_lucro']."
                 </div>
-                <div class='cell cellIcms'>
+                <div class='cellu cellIcms'>
                     ".$linha['icms']."
                 </div>
-                <div class='cell cellImagem'>
+                <div class='cellu cellImagem'>
                     ".$linha['campo_imagem']."
                 </div>
-                <div class='cell cellAcoes'>
+                <div class='cellu cellAcoesu'>
                     <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
                     <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                 </div>
@@ -144,5 +144,10 @@
     echo "</div>
     </div>";
 ?>    
+     <div class="btnus">
+        <a class="btnfinalc" href="../../../../BancoV6/Cadastros/Produtos/cadastros/cad_novo_produtos_front.php">Novo Produto</a>&nbsp;&nbsp;
+        <a class="btnfinalfu" href="../../../../BancoV6/index.php">Voltar</a>&nbsp;&nbsp;
+        </div>
+</div>
 </body>
 </html>

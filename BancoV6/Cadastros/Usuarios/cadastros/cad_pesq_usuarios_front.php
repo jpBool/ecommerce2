@@ -35,7 +35,7 @@
         }
 
         // Começar tabela e criar o cabeçalho
-        echo "<h1 class='hu'>Cadastro de Usuários</h1>
+        echo "<h1 class='hu'>Pesquisa de Usuários</h1>
     <div class='tableu'>
         <div class='rowu'>
             <div class='cellus cellCodigou cellHeaderu'>
