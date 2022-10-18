@@ -1,45 +1,88 @@
-<link rel="stylesheet" href="../../../../BancoV6/css/cabecalho/style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class='cabecalho'>
-    <div class='hamburguer_menu'>
-        <input id='menu_to' type='checkbox'/>
-        <label class ='menu_btn' for='menu_to'>
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Alteração de Usuários</title>
+       <link rel="stylesheet" href="../../../../BancoV6/css/cabecalho/style.css">
+       <script src="https://kit.fontawesome.com/0dcacea947.js" crossorigin="anonymous"></script>
+       <link rel="icon" href="../../../../BancoV6/imagem/logopreta.png">
+</head>
+
+<body class="bodyua">
+
+       
+    <div class='cabecalho'>
+        <input id='menu_to' type='checkbox' />
+        <label class='menu_btn' for='menu_to'>
             <span></span>
         </label>
         <ul class='menu_box'>
-            <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></a></li>
-            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
-            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
-            <li><a class='menu_item' href='#'>Devs</a></a></li>
-            <li><a class='menu_item' href='#'>Estatísticas</a></a></li> 
-       </ul>
+            <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></li>
+            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
+            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
+            <li><a class='menu_item' href='#'>Estatísticas</a></li>
+            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/patrocinadores/patro.php'>Patrocinadores</a></li>
+        </ul>
+        <div class='logo'>
+            <img class='logoimg' src="../../../../BancoV6/imagem/logopreta.png">
+        </div>
+        <a href="../../../../BancoV6/">
+            <div class='pesquisa'>
+                <div class='pesquisa_icone'>
+                    <a href="#"><i class="fa-thin fa-magnifying-glass fa"></i></a>
+                </div>
+                <input class="pesquisatxt" type="text" name="pesquisa" placeholder="Pesquisar...">
+            </div>
+            <div class='login'>
+                <div class='login_icone'>
+                    <a href="../../../login.php"><i class="fa-thin fa-user fa"></i></a>
+                </div>
+            </div>
+            <div class='carrinho'>
+                <div class='carrinho_icone'>
+                    <a href="../../carrinho/carrinho_front.php"> <i class="fa-thin fa-cart-shopping fa"></i></a>
+                </div>
+            </div>
     </div>
-</div>
-<!-- Recuperando as informações do produto -->
-<?php
+       <!-- Recuperando as informações do produto -->
+       <?php
        $id_usuario = $_GET["id_usuario"];
-       include "cad_getinfo_usuarios_back.php"; 
-?>
-
-<!-- Formulário (após as informações serem carregadas) -->
-<form action="cad_altera_usuarios_back.php" method="post">
-
-    <input type="text" name="id_usuario" 
-           value="<?php echo $linha['id_usuario']; ?>" >
-    <br><br>Nome
-    <input type="text" name="nome" 
-           value="<?php echo $linha['nome']; ?>" >      
-    <br><br>Email
-    <input type="text" name="email" 
-           value="<?php echo $linha['email']; ?>" >
-    <br><br>Senha
-    <input type="text" name="senha" 
-           value="<?php echo $linha['senha']; ?>" >
-    <br><br>Telefone
-    <input type="text" name="telefone" 
-           value="<?php echo $linha['telefone']; ?>" >
-
-     <br><br>
-    <input type="submit" value="Gravar">
-    <input type="reset" value="Voltar" onclick="history.back()">
-</form>
+       include "cad_getinfo_usuarios_back.php";
+       ?>
+       <div class="maeal">
+       <h1 class="hua">Alteração de Usuários</h1>
+              <!-- Formulário (após as informações serem carregadas) -->
+              <form class="dadost" action="cad_altera_usuarios_back.php" method="post">
+                     <div class="dados">
+                            <label>Código</label>
+                            <input type="text" name="id_usuario" value="<?php echo $linha['id_usuario']; ?>">
+                     </div>
+                     <div class="dados">
+                            <label>Nome</label>
+                            <input type="text" name="nome" value="<?php echo $linha['nome']; ?>">
+                     </div>
+                     <div class="dados">
+                            <label>Email</label>
+                            <input type="text" name="email" value="<?php echo $linha['email']; ?>">
+                     </div>
+                     <div class="dados">
+                            <label>Senha</label>
+                            <input type="text" name="senha" value="<?php echo $linha['senha']; ?>">
+                     </div>
+                     <div class="dados">
+                            <label>Telefone</label>
+                            <input type="text" name="telefone" value="<?php echo $linha['telefone']; ?>">
+                     </div>
+                     <div class="cadsu">
+                     <div class="cad3">
+                            <input type="submit" value="Gravar">
+                     </div>
+                     <div class="cad3">
+                            <input type="reset" value="Voltar" onclick="history.back()">
+                     </div>
+                     </div>
+              </form>
+       </div>

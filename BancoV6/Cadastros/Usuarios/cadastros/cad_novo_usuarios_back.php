@@ -25,7 +25,7 @@
     if ($linhas > 0)
     {
         echo '<script language="javascript">';
-        echo "alert('Produto salvo com sucesso!')";
+        echo "alert('Usuario salvo com sucesso!')";
         echo '</script>';	
 
         header("Location: cad_novo_usuarios_front.php");
@@ -39,4 +39,6 @@
 
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);
+    header("Location: ../../../../BancoV6/index.php");
+    exit();
 ?>  

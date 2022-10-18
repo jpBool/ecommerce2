@@ -23,7 +23,7 @@
                 <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
                 <li><a class='menu_item' href='../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
                 <li><a class='menu_item' href='#'>Estatísticas</a></li>
-                <li><a class='menu_item' href='#'>Patrocinadores</a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/patrocinadores/patro.php'>Patrocinadores</a></li>
             </ul>
             <div class='logo'>
                 <img class='logoimg' src="../BancoV6/imagem/logopreta.png">

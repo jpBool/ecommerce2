@@ -55,7 +55,7 @@
 
     // Começar tabela e criar o cabeçalho
     echo "
-    <div class='maepesqp'>
+    <div class='maeus'>
     <div class='table'>
         <div class='row'>
             <div class='cell cellodigo cellHeader'>

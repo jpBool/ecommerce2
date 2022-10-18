@@ -1,210 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <title>Pesquisa de Usuários</title>
-        <link rel="stylesheet" href="../../../../BancoV6/css/cabecalho/style.css">
-    </head>
-<body>
 
-<style>
-    .menuTop
-    {
-        overflow: hidden;
-        background-color: #333;
-    }
-    .menuTop li
-    {
-        display:inline-flex;
-        padding-right:3px;
-        background-color: rgb(94, 94, 94);
-       
-    }
-    .menuTop a
-    {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    body
-    {
-        background-color: #f0ffff;
-    }
-    .table {width:1500px; display:grid;}
-    .row { display:block;}
-    .cell {
-        border-width: medium;
-        border-style: solid;
-        display:inline-block;
-        padding: 1px 3px;
-        margin-bottom: .2%;
-        background-color: rgb(144, 221, 217);
-        font-size: 10pt;
-    }
+<head>
+    <meta charset="utf-8" />
+    <title>Pesquisa de Usuários</title>
+    <link rel="stylesheet" href="../../../../BancoV6/css/cabecalho/style.css">
+	<script src="https://kit.fontawesome.com/0dcacea947.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="../../../../BancoV6/imagem/logopreta.png">
+</head>
 
-    .mae{
-        width: 100%;
-        padding-left: 250px;
-        background-color: #f0ffff;
-    }
-
-    .cellNome {
-        width:100px;
-        border-radius: 8px;
-        text-align: center;
-        padding: 10px;
-        height: 15px;
-        font-size: 15px;
-        background-color: #597FB1;
-        font-weight: bolder;
-    }
-    .cellHeader {text-align: center !important;}
-    .cellCodigo {
-        width:100px; 
-        border-radius: 8px;
-        text-align: center;
-        padding: 10px;
-        height: 15px;
-        font-size: 15px;
-        background-color: #597FB1;
-        font-weight: bolder;
-    }
-    .cellEmail {
-        width:220px;
-        border-radius: 8px;
-        text-align: center;
-        padding: 10px;
-        height: 15px;
-        font-size: 15px;
-        background-color: #597FB1;
-        font-weight: bolder;
-    }
-    .cellSenha {
-        width:60px;
-        border-radius: 8px;
-        text-align: center;
-        padding: 10px;
-        height: 15px;
-        font-size: 15px;
-        background-color: #597FB1;
-        font-weight: bolder;
-    }
-    .cellTelefone {
-        width:100px;
-        border-radius: 8px;
-        text-align: center;
-        padding: 10px;
-        height: 15px;
-        font-size: 15px;
-        background-color: #597FB1;
-        font-weight: bolder;
-    }
-    .cellAcoes {
-        width:100px;
-        border-radius: 8px;
-        text-align: center;   
-        padding: 10px;
-        height: 15px;
-        font-size: 15px;
-        background-color: #597FB1;
-        font-weight: bolder;
-    }
-</style>
-
-<div class='cabecalho'>
-    <div class='hamburguer_menu'>
-        <input id='menu_to' type='checkbox'/>
-        <label class ='menu_btn' for='menu_to'>
-            <span></span>
-        </label>
-        <ul class='menu_box'>
-            <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></a></li>
-            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
-            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
-            <li><a class='menu_item' href='#'>Devs</a></a></li>
-            <li><a class='menu_item' href='#'>Estatísticas</a></a></li> 
-       </ul>
+<body class="bodyus">
+    <div class='cabecalho'>
+        <div class='hamburguer_menu'>
+            <input id='menu_to' type='checkbox' />
+            <label class='menu_btn' for='menu_to'>
+                <span></span>
+            </label>
+            <ul class='menu_box'>
+                <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></a></li>
+                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
+                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
+                <li><a class='menu_item' href='#'>Devs</a></a></li>
+                <li><a class='menu_item' href='#'>Estatísticas</a></a></li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="menuTop">
-        <ul>
-            <li>
-                <a href='cad_novo_usuarios_front.php'>Novo Usuário!</a>
-            </li>  
-            <li>
-                <a href="../../../index.php">+ Voltar</a>
-            </li>
-            <li>
-                <a href="#">+ Pesquisar</a>
-            </li>
-        </ul>  
-    </div><br>
-    
-    <div class='mae'>
-<?php
-    include "cad_pesq_usuarios_back.php";
+    <div class='maeus'>
+        <?php
+        include "cad_pesq_usuarios_back.php";
 
-    if ($qtde == 0) {
-        echo "Não foi encontrado nenhum produto !!!<br><br>";
-        return;
-    }
+        if ($qtde == 0) {
+            echo "Não foi encontrado nenhum usuario !!!<br><br>";
+            return;
+        }
 
-    // Começar tabela e criar o cabeçalho
-    echo "
-    <div class='table'>
-        <div class='row'>
-            <div class='cell cellCodigo cellHeader'>
+        // Começar tabela e criar o cabeçalho
+        echo "<h1 class='hu'>Cadastro de Usuários</h1>
+    <div class='tableu'>
+        <div class='rowu'>
+            <div class='cellus cellCodigou cellHeaderu'>
                 Cód. Usuário
             </div>
-            <div class='cell cellNome cellHeader'>
+            <div class='cellus cellNomeu cellHeaderu'>
                 Nome
             </div>
-            <div class='cell cellEmail cellHeader'>
+            <div class='cellus cellEmail cellHeaderu'>
                 Email
             </div>
-            <div class='cell cellSenha cellHeader'>
+            <div class='cellus cellSenha cellHeaderu'>
                 Senha
             </div>
-            <div class='cell cellTelefone cellHeader'>
+            <div class='cellus cellTelefone cellHeaderu'>
                 Telefone
             </div>
-            <div class='cell cellAcoes'>
+            <div class='cellus cellAcoesu'>
                 &nbsp;
             </div>     
         </div>";
 
         // Criar linhas com os dados dos produtos
-        foreach ($resultado_lista as $linha)
-        {
+        foreach ($resultado_lista as $linha) {
             echo "
-            <div class='row'>
-                <div class='cell cellCodigo'>
-                    ".$linha['id_usuario']."
+            <div class='rowu'>
+                <div class='cellus cellCodigou'>
+                    " . $linha['id_usuario'] . "
                 </div>
-                <div class='cell cellNome'>
-                    ".$linha['nome']."
+                <div class='cellus cellNomeu'>
+                    " . $linha['nome'] . "
                 </div>
-                <div class='cell cellEmail'>
-                    ".$linha['email']."
+                <div class='cellus cellEmail'>
+                    " . $linha['email'] . "
                 </div>
-                <div class='cell cellSenha'>
-                    ".$linha['senha']."
+                <div class='cellus cellSenha'>
+                    " . $linha['senha'] . "
                 </div>
-                <div class='cell cellTelefone'>
-                    ".$linha['telefone']."
+                <div class='cellus cellTelefone'>
+                    " . $linha['telefone'] . "
                 </div>
-                <div class='cell cellAcoes'>
-                    <a href='cad_altera_usuarios_front.php?id_usuario=".$linha['id_usuario']."'> Alterar</a>&nbsp;
+                <div class='cellus cellAcoesu'>
+                    <a href='cad_altera_usuarios_front.php?id_usuario=" . $linha['id_usuario'] . "'> Alterar</a>&nbsp;
                    
                 </div>
-            </div> "; 
-        } 
-    // Fechando a tag da tabela
-    echo "</div>";
-?>    
+            </div> ";
+        }
+        // Fechando a tag da tabela
+        echo "</div>";
+        ?>
+        <div class="btnus">
+        <a class="btnfinalc" href="../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_novo_usuarios_front.php">Novo Usuário</a>&nbsp;&nbsp;
+        <a class="btnfinalfu" href="../../../../BancoV6/index.php">Voltar</a>&nbsp;&nbsp;
+        </div>
     </div>
 </body>
+
 </html>
