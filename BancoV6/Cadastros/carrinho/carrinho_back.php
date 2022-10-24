@@ -12,11 +12,12 @@
 
         $resultado=pg_query($conecta,$sql);
         $qtde=pg_num_rows($resultado);
-
+        
         if ( $qtde == 0 )
             return 0;
         
         // retornará a quantidade atual do item já existente no carrinho
+        $_SESSION["qtdCarrinho"] = $qtde;
         $produto_carrinho = pg_fetch_array($resultado);
         return intval($produto_carrinho['qtde']);
     }

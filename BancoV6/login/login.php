@@ -5,48 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css\cabecalho/style.css">
+    <link rel="stylesheet" href="../../BancoV6/css/cabecalho/style.css">
     <script src="https://kit.fontawesome.com/0dcacea947.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../../BancoV6/imagem/logopreta.png" />
     <title>Login</title>
 </head>
 
 <body>
-    <div class='cabecalho'>
-        <input id='menu_to' type='checkbox' />
-        <label class='menu_btn' for='menu_to'>
-            <span></span>
-        </label>
-        <ul class='menu_box'>
-            <li><a class='menu_item' href='../BancoV6/index.php'>Home</a></li>
-            <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-            <li><a class='menu_item' href='#'>Devs</a></li>
-            <li><a class='menu_item' href='#'>Estatísticas</a></li>
-            <li><a class='menu_item' href='#'>Patrocinadores</a></li>
-        </ul>
-        <div class='logo'>
-            <img class='logoimg' src="../BancoV6/imagem/logopreta.png">
-        </div>
-        <div class='pesquisa'>
-            <div class='pesquisa_icone'>
-                <a href="#"><i class="fa-thin fa-magnifying-glass fa"></i></a>
-            </div>
-            <input class="pesquisatxt" type="text" name="pesquisa" placeholder="Pesquisar...">
-        </div>
-        <div class='login'>
-            <div class='login_icone'>
-                <a href="./login.php"><i class="fa-thin fa-user fa"></i></a>
-            </div>
-        </div>
-        <div class='carrinho'>
-            <div class='carrinho_icone'>
-                <a href="#"> <i class="fa-thin fa-cart-shopping fa"></i></a>
-            </div>
-        </div>
-    </div>
     <div class="main-login">
         <div class="left-login">
             <h1>Faça Login<br>E compre conosco!!!</h1>
-            <div class="left-login-image"><img src="../BancoV6/imagem/logoembranco.png" alt="">
+            <div class="left-login-image"><img src="../../BancoV6/imagem/logoembranco.png">
             </div>
         </div>
 
@@ -65,14 +34,12 @@
                                 <input type="password" name="senha" placeholder="Senha" id="senha">
                             </div>
                             <div class="btn-login">
-                                <input type="submit" value="logar">Login
+                                <input type="submit" value="logar">
                             </div>
                         
                             <div class="criacao">
-                                <br>
-                                <br>
                                 <label>Não possui uma conta?</label>
-                                <a href="../Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php"> Crie aqui</a>
+                                <a href="../Cadastros/Usuarios/cadastros/cad_novo_usuarios_front.php"> Crie aqui</a>
                             </div>
                         <form>
                     </div>

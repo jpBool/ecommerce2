@@ -13,7 +13,57 @@
 
 <body>
     <div class="mae">
-        <div class='cabecalho'>
+        <?php 
+        session_start();
+        include "logoff_back.php";
+        include "login_back.php";
+        if($_SESSION["isadm"]==true):
+        ?>
+            <div class='cabecalho'>
+            <input id='menu_to' type='checkbox' />
+            <label class='menu_btn' for='menu_to'>
+                <span></span>
+            </label>
+            <ul class='menu_box'>
+                <li><a class='menu_item' href='../BancoV6/index.php'>Home</a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/Produtos/cadastros/cad_pesq_produtos_front.php' target='_parent'>Cadastro de Produtos</a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Cadastro de Usuários</a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
+                <li><a class='menu_item' href='#'>Estatísticas</a></li>
+                <li><a class='menu_item' href='../BancoV6/Cadastros/patrocinadores/patro.php'>Patrocinadores</a></li>
+            </ul>
+            <div class='logo'>
+                <img class='logoimg' src='../BancoV6/imagem/logopreta.png'>
+            </div>
+            <div class='pesquisa'>
+                <div class='pesquisa_icone'>
+                    <a href='#'><i class='fa-thin fa-magnifying-glass fa'></i></a>
+                </div>
+                <input class='pesquisatxt' type='text' name='pesquisa' placeholder='Pesquisar...'>
+            </div>
+            <div class='login'>
+                <div class='login_icone'>
+                    <?php if($_SESSION["usuariologado"]!=""):?>
+                    <a href='./login/login_true.php'><i class='fa-thin fa-user fa'></i></a>
+                    <?php endif;
+                    if($_SESSION["usuariologado"]==""):?>
+                    <a href='./login/login.php'><i class='fa-thin fa-user fa'></i></a>
+                    <?php endif;?>
+                </div>
+            </div>
+            <div class='carrinho'>
+                <div class='carrinho_icone'>
+                    <a href='../BancoV6/Cadastros/carrinho/carrinho_front.php'><i class='fa-thin fa-cart-shopping fa'></i></a>
+                </div>
+            </div>
+        </div>
+        <?php endif;
+        
+        
+        if($_SESSION["isadm"]!=true): 
+?>
+            <div class='cabecalho'>
             <input id='menu_to' type='checkbox' />
             <label class='menu_btn' for='menu_to'>
                 <span></span>
@@ -22,30 +72,34 @@
                 <li><a class='menu_item' href='../BancoV6/index.php'>Home</a></li>
                 <li><a class='menu_item' href='../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
                 <li><a class='menu_item' href='../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
-                <li><a class='menu_item' href='#'>Estatísticas</a></li>
                 <li><a class='menu_item' href='../BancoV6/Cadastros/patrocinadores/patro.php'>Patrocinadores</a></li>
             </ul>
             <div class='logo'>
-                <img class='logoimg' src="../BancoV6/imagem/logopreta.png">
+                <img class='logoimg' src='../BancoV6/imagem/logopreta.png'>
             </div>
             <div class='pesquisa'>
                 <div class='pesquisa_icone'>
-                    <a href="#"><i class="fa-thin fa-magnifying-glass fa"></i></a>
+                    <a href='#'><i class='fa-thin fa-magnifying-glass fa'></i></a>
                 </div>
-                <input class="pesquisatxt" type="text" name="pesquisa" placeholder="Pesquisar...">
+                <input class='pesquisatxt' type='text' name='pesquisa' placeholder='Pesquisar...'>
             </div>
             <div class='login'>
-                <div class='login_icone'>
-                    <a href="./login/login.php"><i class="fa-thin fa-user fa"></i></a>
+            <div class='login_icone'>
+                    <?php if($_SESSION["usuariologado"]!=""):?>
+                    <a href='./login/login_true.php'><i class='fa-thin fa-user fa'></i></a>
+                    <?php endif;
+                    if($_SESSION["usuariologado"]==""):?>
+                    <a href='./login/login.php'><i class='fa-thin fa-user fa'></i></a>
+                    <?php endif;?>
                 </div>
             </div>
             <div class='carrinho'>
                 <div class='carrinho_icone'>
-                    <a href="../BancoV6/Cadastros/carrinho/carrinho_front.php"><i class="fa-thin fa-cart-shopping fa"></i></a>
+                    <a href='../BancoV6/Cadastros/carrinho/carrinho_front.php'><i class='fa-thin fa-cart-shopping fa'></i></a>
                 </div>
             </div>
         </div>
-         <!-- <a href='Cadastros/Produtos/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a> -->
+        <?php endif;?>
         <!-- <a href='Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a>
         <a href='Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Seleção de Produtos</a> -->
 
@@ -121,9 +175,8 @@
                             <ul>
                                 <li><a href="../BancoV6/index.php">Home</a></li>
                                 <li><a href="../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php">Produtos</a></li>
-                                <li><a href="#">Estatísticas</a></li>
                                 <li><a href="../BancoV6/Cadastros/Devs/devs.php">Devs</a></li>
-                                <li><a href="#">Patrocinadores</a></li>
+                                <li><a href="../BancoV6/Cadastros/patrocinadores/patro.php">Patrocinadores</a></li>
                             </ul>
                         </div>
 
@@ -145,7 +198,7 @@
                             <ul>
                                 <li><a href="https://goo.gl/maps/NAnKGTvv8a1h7rFS9" target="_blank">Rua Dos Andradas 3-17,Bauru 17050-200, Brasil</a></li>
                                 <br>
-                                <li><a class="footer_email" href="mailto:picrollbauru@gmail.com">Nos mande um email</a></li>
+                                <!-- <li><a class="footer_email" href="mailto:picrollbauru@gmail.com">Nos mande um email</a></li> -->
 
                         </div>
                         <div class="vtop"><a href="#topo"><i class="fa-thin fa-arrow-up fa"></i></a></div>

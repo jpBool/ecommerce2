@@ -39,6 +39,6 @@
 
     // Fecha a conexão com o PostgreSQL
     pg_close($conecta);
-    header("Location: ../../../../BancoV6/index.php");
+    header("Location: ../../../../BancoV6/login/login.php");
     exit();
 ?>  

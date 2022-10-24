@@ -10,21 +10,50 @@
 </head>
 
 <body class="bodyus">
-    <div class='cabecalho'>
-        <div class='hamburguer_menu'>
-            <input id='menu_to' type='checkbox' />
-            <label class='menu_btn' for='menu_to'>
-                <span></span>
-            </label>
-            <ul class='menu_box'>
-                <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
-                <li><a class='menu_item' href='#'>Devs</a></a></li>
-                <li><a class='menu_item' href='#'>Estatísticas</a></a></li>
-            </ul>
-        </div>
-    </div>
+<?php
+        session_start();
+		include "logoff_back.php";
+		include "login_back.php";
+		?>
+			<div class='cabecalho'>
+				<input id='menu_to' type='checkbox' />
+				<label class='menu_btn' for='menu_to'>
+					<span></span>
+				</label>
+				<ul class='menu_box'>
+					<li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/Produtos/cadastros/cad_pesq_produtos_front.php' target='_parent'>Cadastro de Produtos</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Cadastro de Usuários</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
+					<li><a class='menu_item' href='#'>Estatísticas</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/patrocinadores/patro.php'>Patrocinadores</a></li>
+				</ul>
+				<div class='logo'>
+					<img class='logoimg' src='../../../../BancoV6/imagem/logopreta.png'>
+				</div>
+				<div class='pesquisa'>
+					<div class='pesquisa_icone'>
+						<a href='#'><i class='fa-thin fa-magnifying-glass fa'></i></a>
+					</div>
+					<input class='pesquisatxt' type='text' name='pesquisa' placeholder='Pesquisar...'>
+				</div>
+				<div class='login'>
+					<div class='login_icone'>
+						<?php if ($_SESSION["usuariologado"] != "") : ?>
+							<a href='../../../../BancoV6/login/login_true.php'><i class='fa-thin fa-user fa'></i></a>
+						<?php endif;
+						if ($_SESSION["usuariologado"] == "") : ?>
+							<a href='../../../../BancoV6/login/login.php'><i class='fa-thin fa-user fa'></i></a>
+						<?php endif; ?>
+					</div>
+				</div>
+				<div class='carrinho'>
+					<div class='carrinho_icone'>
+						<a href='../../../../BancoV6/Cadastros/carrinho/carrinho_front.php'><i class='fa-thin fa-cart-shopping fa'></i></a>
+					</div>
+				</div>
+			</div>
     <div class='maeus'>
         <?php
         include "cad_pesq_usuarios_back.php";
