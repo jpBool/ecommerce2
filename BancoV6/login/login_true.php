@@ -103,7 +103,7 @@
               <h1 class="hualog">Perfil</h1>
               <div class="perfil">
                      <div class="imgperfis">
-                            <img class="imgperfil" src="../../BancoV6/imagem/enrico.jpg">
+                            <img class="imgperfil" src="../../BancoV6/imagem/perfil.jpeg">
                             <div class="btnsperf">
                                    <div class="cellc cellAc"> <a href="./logoff_back.php">Sair</a></div>
                                    |
