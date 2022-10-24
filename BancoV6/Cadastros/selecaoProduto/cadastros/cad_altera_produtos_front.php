@@ -119,7 +119,7 @@
     echo "
         <div class='maeselect'>
             <div class='divimagem'>
-                <img class='imgframe' src='../../../../BancoV6/imagem/frame.png'> <br><br>
+                <img class='imgframe' src='../../../../BancoV6/imagem/pic2.jpeg'> <br><br>
             </div>
 
             <div class='divinfo'>

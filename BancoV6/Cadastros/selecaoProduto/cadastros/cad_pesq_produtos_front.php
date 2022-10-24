@@ -117,15 +117,17 @@
         {
             echo "
                 <div class='quadrado'>
-                    <br>
-                    <img src='../img/caixa.png' width='150px'> <br><br>
+                    
+					<div class='divdeta'>
+                    <img class='imgdeta' src='../../../../BancoV6/imagem/pic1.jpeg'>
+					</div>
                     <div class='nomeprod'>
                          ".$linha['nome']." <br>
                     </div>
                     <div class='precoprod'>
                         <label>R$</label> ".$linha['preco']." <br> 
                     </div>
-                    <label>Quantidade em estoque : </label>".$linha['qtd']." <br><br><br>
+                    <label>Quantidade em estoque : </label>".$linha['qtd']." <br><br>
                     <div class='btncomprar'>
                         <a class='link' href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Detalhes</a>&nbsp;
                     </div>
