@@ -10,8 +10,8 @@
             <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></a></li>
             <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></a></li>
             <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Usuários</a></a></li>
-            <li><a class='menu_item' href='#'>Devs</a></a></li>
-            <li><a class='menu_item' href='#'>Estatísticas</a></a></li> 
+            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Devs/devs.php'>Devs</a></a></li>
+            <li><a class='menu_item' href='../../../../BancoV6/Cadastros/estatisticas/estatistica.php'>Estatísticas</a></a></li> 
        </ul>
     </div>
 </div>

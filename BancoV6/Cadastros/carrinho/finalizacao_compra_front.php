@@ -15,7 +15,6 @@
     session_start();
     $codusuario = $_SESSION["id"]; // Depois precisamos alterar para pegar da $_SESSION
     include "finalizacao_compra_back.php";
-    include "logoff_back.php";
 ?>
     <div class="maefc">
         <div class="boxfc">
