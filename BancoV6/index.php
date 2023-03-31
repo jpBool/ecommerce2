@@ -50,6 +50,20 @@
         <a href='Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Seleção de Produtos</a> -->
 
         <div class="corpo">
+            <?php
+            session_start();
+            echo $_SESSION['isadm'];
+            echo "<br><br>";
+            echo $_SESSION["usuariologado"];
+
+            if($_SESSION["usuariologado"] != "")
+            {
+                echo '  usuário está logado';
+            }
+            ?> 
+            
+            <br>
+            <a href="login/logoff_back.php">Sair</a>
             <a name="topo"></a>
             <div class="descricao">
                 <div class="desc_img1">
