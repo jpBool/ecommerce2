@@ -12,15 +12,15 @@
 <body>
     
 <?php
-    //session_start();
-    $codusuario = 1; // Depois precisamos alterar para pegar da $_SESSION
+    session_start();
+    $codusuario = $_SESSION["id"]; // Depois precisamos alterar para pegar da $_SESSION
     include "finalizacao_compra_back.php";
 ?>
     <div class="maefc">
         <div class="boxfc">
         <i class="fa fa-thin fa-face-smile-wink fa-10x"></i>
         <p>Obrigado por comprar conosco!</p>
-        <a class="btnfc" href="../../../BancoV6/index.php">Compre novamente</a>
+        <a class="btnfc" href="../../../BancoV6/login/logoff_back.php">Compre novamente</a>
         </div>
     </div>
 

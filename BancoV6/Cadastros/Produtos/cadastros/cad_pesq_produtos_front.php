@@ -7,44 +7,53 @@
         <script src="https://kit.fontawesome.com/0dcacea947.js" crossorigin="anonymous"></script>
      <link rel="icon" href="../../../../BancoV6/imagem/logopreta.png" />
     </head>
-<body>
-<div class='cabecalho'>
-            <input id='menu_to' type='checkbox' />
-            <label class='menu_btn' for='menu_to'>
-                <span></span>
-            </label>
-            <ul class='menu_box'>
-                <li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
-                <li><a class='menu_item' href='../../../../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
-                <li><a class='menu_item' href='#'>Estatísticas</a></li>
-                <li><a class='menu_item' href='#'>Patrocinadores</a></li>
-            </ul>
-            <div class='logo'>
-                <img class='logoimg' src="../../../../BancoV6/imagem/logopreta.png">
-            </div>
-            <a href="../../../../BancoV6/">
-            <div class='pesquisa'>
-                <div class='pesquisa_icone'>
-                    <a href="#"><i class="fa-thin fa-magnifying-glass fa"></i></a>
-                </div>
-                <input class="pesquisatxt" type="text" name="pesquisa" placeholder="Pesquisar...">
-            </div>
-            <div class='login'>
-                <div class='login_icone'>
-                    <a href="../../../login.php"><i class="fa-thin fa-user fa"></i></a>
-                </div>
-            </div>
-            <div class='carrinho'>
-                <div class='carrinho_icone'>
-                    <a href="#"> <i class="fa-thin fa-cart-shopping fa"></i></a>
-                </div>
-            </div>
-        </div>
-<a href='cad_novo_produtos_front.php'>+ Novo Produto</a><br><br>
-<a href="../../../index.php">+ Voltar</a>
+<body class="bodyp">
+<?php
+        session_start();
+		include "logoff_back.php";
+		include "login_back.php";
+		?>
+			<div class='cabecalho'>
+				<input id='menu_to' type='checkbox' />
+				<label class='menu_btn' for='menu_to'>
+					<span></span>
+				</label>
+				<ul class='menu_box'>
+					<li><a class='menu_item' href='../../../../BancoV6/index.php'>Home</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/selecaoProduto/cadastros/cad_pesq_produtos_front.php' target='_parent'>Produtos</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/Produtos/cadastros/cad_pesq_produtos_front.php' target='_parent'>Cadastro de Produtos</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php' target='_parent'>Cadastro de Usuários</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/Devs/devs.php'>Devs</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/estatisticas/estatistica.php'>Estatísticas</a></li>
+					<li><a class='menu_item' href='../../../../BancoV6/Cadastros/patrocinadores/patro.php'>Patrocinadores</a></li>
+				</ul>
+				<div class='logo'>
+					<img class='logoimg' src='../../../../BancoV6/imagem/logopreta.png'>
+				</div>
+				<div class='pesquisa'>
+					<div class='pesquisa_icone'>
+						<a href='#'><i class='fa-thin fa-magnifying-glass fa'></i></a>
+					</div>
+					<input class='pesquisatxt' type='text' name='pesquisa' placeholder='Pesquisar...'>
+				</div>
+				<div class='login'>
+					<div class='login_icone'>
+						<?php if ($_SESSION["usuariologado"] != "") : ?>
+							<a href='../../../../BancoV6/login/login_true.php'><i class='fa-thin fa-user fa'></i></a>
+						<?php endif;
+						if ($_SESSION["usuariologado"] == "") : ?>
+							<a href='../../../../BancoV6/login/login.php'><i class='fa-thin fa-user fa'></i></a>
+						<?php endif; ?>
+					</div>
+				</div>
+				<div class='carrinho'>
+					<div class='carrinho_icone'>
+						<a href='../../../../BancoV6/Cadastros/carrinho/carrinho_front.php'><i class='fa-thin fa-cart-shopping fa'></i></a>
+					</div>
+				</div>
+			</div>
 
-<div class='maeus'>
+<div class='maepesqp'>
 <?php
     include "cad_pesq_produtos_back.php";
 
@@ -56,42 +65,42 @@
     // Começar tabela e criar o cabeçalho
     echo "
     <h1 class='hu'>Cadastro de Produtos</h1>
-    <div class='tableus'>
-        <div class='rowu'>
-            <div class='cellu cellodigo cellHeader'>
+    <div class='tableu'>
+        <div class='rowp'>
+            <div class='cellp cellodigop cellHeaderp'>
                 Cód. Produto
             </div>
-            <div class='cellu cellNome cellHeader'>
+            <div class='cellp cellNomep cellHeaderp'>
                 Nome
             </div>
-            <div class='cellu cellDescricao cellHeader'>
+            <div class='cellp cellDescricaop cellHeaderp'>
                 Descrição
             </div>
-            <div class='cellu cellQtd cellHeader'>
+            <div class='cellp cellQtdp cellHeaderp'>
                 Quantidade
             </div>
-            <div class='cellu cellPreco cellHeader'>
+            <div class='cellp cellPrecop cellHeaderp'>
                 Preço
             </div>
-            <div class='cellu cellExcluido cellHeader'>
+            <div class='cellp cellExcluidop cellHeaderp'>
                 Excluido
             </div>
-            <div class='cellu cellData cellHeader'>
+            <div class='cellp cellDatap cellHeaderp'>
                 Data/Hora
             </div>
-            <div class='cellu cellodigoVisual cellHeader'>
+            <div class='cellp cellodigoVisualp cellHeaderp'>
                 CodigoVisual
             </div>
-            <div class='cellu cellLucro cellHeader'>
+            <div class='cellp cellLucrop cellHeaderp'>
                 Lucro
             </div>
-            <div class='cellu cellIcms cellHeader'>
+            <div class='cellp cellIcmsp cellHeaderp'>
                 Icms
             </div>
-            <div class='cellu cellImagem cellHeader'>
+            <div class='cellp cellImagemp cellHeaderp'>
                 Imagem
             </div>
-            <div class='cellu cellAcoes'>
+            <div class='cellp cellAcoesps'>
                 &nbsp;
             </div>     
         </div>";
@@ -100,45 +109,46 @@
         foreach ($resultado_lista as $linha)
         {
             echo "
-            <div class='rowu'>
-                <div class='cellu cellodigo'>
+            <div class='rowp'>
+                <div class='cellp cellodigop'>
                     ".$linha['id_produto']."
                 </div>
-                <div class='cellu cellNome'>
+                <div class='cellp cellNomep'>
                     ".$linha['nome']."
                 </div>
-                <div class='cellu cellDescricao'>
+                <div class='cellp cellDescricaop'>
                     ".$linha['descricao']."
                 </div>
-                <div class='cellu cellQtd'>
+                <div class='cellp cellQtdp'>
                     ".$linha['qtd']."
                 </div>
-                <div class='cellu cellPreco'>
+                <div class='cellp cellPrecop'>
                     ".$linha['preco']."
                 </div>
-                <div class='cellu cellExcluido'>
+                <div class='cellp cellExcluidop'>
                     ".$linha['excluido']."
                 </div>
-                <div class='cellu cellData'>
+                <div class='cellp cellDatap'>
                     ".$linha['datahora_exlusao']."
                 </div>
-                <div class='cellu cellodigoVisual'>
+                <div class='cellp cellodigoVisualp'>
                     ".$linha['codigovisual']."
                 </div>
-                <div class='cellu cellLucro'>
+                <div class='cellp cellLucrop'>
                     ".$linha['margem_lucro']."
                 </div>
-                <div class='cellu cellIcms'>
+                <div class='cellp cellIcmsp'>
                     ".$linha['icms']."
                 </div>
-                <div class='cellu cellImagem'>
+                <div class='cellp cellImagemp'>
                     ".$linha['campo_imagem']."
                 </div>
-                <div class='cellu cellAcoesu'>
-                    <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;
+                <div class='cellp cellAcoesp'>
+                    <a href='cad_altera_produtos_front.php?id_produto=".$linha['id_produto']."'> Alterar</a>&nbsp;|
                     <a href='cad_exclui_produtos_front.php?id_produto=".$linha['id_produto']."'> Excluir</a>&nbsp;
                 </div>
-            </div> "; 
+                <br>
+             "; 
         } 
     // Fechando a tag da tabela
     echo "</div>

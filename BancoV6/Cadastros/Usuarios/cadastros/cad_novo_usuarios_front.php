@@ -51,7 +51,7 @@
             <br>
             <div class="criacaou">
                 <label>Já possui uma conta?</label>
-                <a href="../../../../BancoV6/Cadastros/Usuarios/cadastros/cad_pesq_usuarios_front.php"> Faça Login</a>
+                <a href="../../../../BancoV6/login/login.php"> Faça Login</a>
 
             </div>
         </div>

@@ -28,4 +28,5 @@
 
     session_start();
     $_SESSION['produtos'] = $resultado_lista;
+    
 ?>
